@@ -68,7 +68,7 @@ function mouseReleased() {
   shapes[2].released();
   */
   let a = createA('https://kelenina.github.io/SecondChallange/', '🍀', '_blank');
-  a.position(200, 300);
+  a.position(200, 400);
   a.hide();
   if(count >= 50) {
     a.show();
