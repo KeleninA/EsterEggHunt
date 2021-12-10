@@ -5,6 +5,7 @@ let rand1;
 let rand2;
 let rand3;
 let rand4;
+let count = 0
 
 function setup() {
   createCanvas(400, 400);
@@ -22,7 +23,8 @@ function setup() {
 function draw() {
   background(0);
   let a = createA('https://kelenina.github.io/SecondChallange/', '🍀', '_blank');
-  a.position(200, 200);
+  a.position(200, 300);
+  a.hide();
   
   for(let i = 0; i <5000; i++) {
     shapes[i].over();
@@ -67,6 +69,10 @@ function mouseReleased() {
   shapes[1].released();
   shapes[2].released();
   */
+  if(count >= 50) {
+    a.show();
+  }
+  count++;
   for(let i = 0; i <5000; i++) {
     shapes[i].released();
   }
